@@ -1,0 +1,21 @@
+{
+  "name": "shabamorix-talent",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace apps/web run dev",
+    "build": "npm --workspace apps/web run build",
+    "start": "npm --workspace apps/web run start",
+    "lint": "npm --workspace apps/web run lint",
+    "format": "prettier . --write",
+    "prisma:generate": "npm --workspace apps/web run prisma:generate",
+    "db:push": "npm --workspace apps/web run db:push"
+  },
+  "devDependencies": {
+    "@types/estree": "1.0.8",
+    "prettier": "^3.3.3"
+  }
+}

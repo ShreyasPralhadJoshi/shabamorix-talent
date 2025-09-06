@@ -1,0 +1,14 @@
+# dependencies
+node_modules
+# build
+.next
+dist
+# env
+.env
+.env.local
+.env.*.local
+# prisma
+apps/web/prisma/dev.db
+# misc
+.DS_Store
+*.log
